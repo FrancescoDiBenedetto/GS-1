@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilo.css" />
+    <link rel="stylesheet" href="./css/minha-conta.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png" />
+    <script src="../reveal.js" defer></script>
+    <script src="../menu.js" defer></script>
+    <script src="./js/logado.js" defer></script>
+    <title>Minha Conta</title>
+  </head>
+  <body>
+    <!--- header --->
+    <header class="header">
+      <div class="menu-caixa">
+        <!--- menu sanduiche --->
+        <div class="sanduiche" onclick="clickMenu()">
+          <!-- Se você precisar adicionar um ícone aqui, adicione o conteúdo SVG -->
+        </div>
+        <!--- menu perfil --->
+        <div class="perfil" onclick="clickPerfil()">
+          <!-- Se você precisar adicionar um ícone aqui, adicione o conteúdo SVG -->
+        </div>
+        <div class="menu-0">
+          <div class="logo-site">
+            <a href="../index.html"
+              ><img src="../img/chemist-icon.jpg" alt="Logo quimica" width="50"
+            /></a>
+          </div>
+          <nav class="menu-1" id="menu">
+            <div class="link-site">
+              <a href="./sobre.html" class="sobre">Sobre</a>
+            </div>
+            <div class="link-site">
+              <a href="./equipe.html" class="equipe">Equipe</a>
+            </div>
+          </nav>
+          <nav class="menu-2" id="perfil">
+            <div class="link-site">
+              <a href="./entrar.html" class="login">Entrar</a>
+            </div>
+            <div class="link-site">
+              <a href="./criar-conta.html" class="cadastro"
+                ><b>Criar Conta</b></a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--- banner --->
+    <main>
+      <section class="caixa-dados">
+        <div class="dados-perfil">
+          <h1>Olá, <span id="nome-usuario">Nome</span>!</h1>
+          <p>
+            Aqui você poderá acessar e gerenciar as informações dos seus
+            sensores, incluindo quantidade, tipos e dados de leituras
+            registradas. Além disso, este espaço também pode auxiliar em
+            análises e parametrizações dos seus dispositivos.
+          </p>
+          <a href="#" id="logout" class="btn">Sair</a>
+        </div>
+      </section>
+    </main>
+    <!--- footer --->
+    <footer class="footer">
+      <div class="challenge">
+        <p>FIAP - Global Solution 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>

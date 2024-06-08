@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilo.css" />
+    <link rel="stylesheet" href="./css/criar-conta.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png" />
+    <script src="../menu.js" defer></script>
+    <title>Entrar</title>
+  </head>
+  <body>
+    <!--- header -->
+
+    <header class="header">
+      <div class="menu-caixa">
+        <!--- menu sanduiche --->
+        <div class="sanduiche" onclick="clickMenu()">
+          <!-- Conteúdo SVG -->
+        </div>
+        <!--- menu perfil --->
+        <div class="perfil" onclick="clickPerfil()">
+          <!-- Conteúdo SVG -->
+        </div>
+        <div class="menu-0">
+          <div class="logo-site">
+            <a href="../index.html"
+              ><img src="../img/chemist-icon.jpg" alt="Logo química" width="50"
+            /></a>
+          </div>
+          <nav class="menu-1" id="menu">
+            <div class="link-site">
+              <a href="./sobre.html" class="sobre">Sobre</a>
+            </div>
+            <div class="link-site">
+              <a href="./equipe.html" class="equipe">Equipe</a>
+            </div>
+          </nav>
+          <nav class="menu-2" id="perfil">
+            <div class="link-site">
+              <a href="./entrar.html" class="login">Entrar</a>
+            </div>
+            <div class="link-site">
+              <a href="./criar-conta.html" class="cadastro"
+                ><b>Criar Conta</b></a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--- caixa de cadastro --->
+    <main>
+      <section class="banner-cadastro">
+        <div class="caixa-cadastro">
+          <h1>Crie seu perfil</h1>
+          <p>
+            Já tem conta? <a href="./entrar.html" class="txt">Faça login</a>
+          </p>
+          <!--- cadastro "provisório" (não funcional) --->
+          <form action="#" method="get">
+            <fieldset class="fieldset-caixa">
+              <div class="dados-cliente">
+                <input
+                  class="barra"
+                  type="text"
+                  name="txtNome"
+                  id="idNome"
+                  placeholder="Nome completo"
+                  required
+                />
+              </div>
+              <div class="dados-cliente">
+                <input
+                  class="barra"
+                  type="number"
+                  name="numCpf"
+                  id="idCpf"
+                  placeholder="CPF"
+                  required
+                />
+              </div>
+              <div class="dados-cliente">
+                <input
+                  class="barra"
+                  type="email"
+                  name="txtEmail"
+                  id="idEmail"
+                  placeholder="E-mail para contato"
+                  required
+                />
+              </div>
+              <div class="dados-cliente">
+                <input
+                  class="barra"
+                  type="number"
+                  name="numCelular"
+                  id="idCelular"
+                  placeholder="Telefone celular"
+                  required
+                />
+              </div>
+              <div class="dados-cliente">
+                <input
+                  class="barra"
+                  type="text"
+                  name="txtEndereco"
+                  id="idEndereco"
+                  placeholder="Endereço completo"
+                  required
+                />
+              </div>
+              <div class="dados-cliente">
+                <input
+                  class="barra"
+                  type="password"
+                  name="txtSenha"
+                  id="idSenha"
+                  placeholder="Crie uma senha"
+                  required
+                />
+              </div>
+              <div class="dados-cliente">
+                <input
+                  class="barra"
+                  type="password"
+                  name="txtConfirmarSenha"
+                  id="idConfirmarSenha"
+                  placeholder="Repita a senha"
+                  required
+                />
+              </div>
+            </fieldset>
+          </form>
+          <div class="criar-conta">
+            <button class="btn" type="submit" id="btnSubmit">
+              Criar conta
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--- footer --->
+    <footer class="footer">
+      <div class="challenge">
+        <p>FIAP - Global Solution 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>

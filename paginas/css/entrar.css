@@ -1,0 +1,72 @@
+/* entrar */
+.banner-login {
+    background-color: #ffffff;
+    margin: 200px 400px;
+    animation: fade-in 2s;
+  }
+  .caixa-login {
+    padding: 70px 100px;
+  }
+  .caixa-login p {
+    padding: 5px 0;
+  }
+  .txt {
+    color: #006191;
+  }
+  .entrar {
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+  .email-senha input[type="email"], .email-senha input[type="password"] {
+    background-color: #CCE9F8;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 0 0 20px;
+    margin: 10px 0;
+  }
+  .email-senha ::placeholder {
+    color: #006191;
+  }
+  .barra:focus {
+    outline: none;
+  }
+  .fieldset-caixa {
+    border: 0;
+  }
+  .sucesso {
+    font-style: italic;
+  }
+  .erro {
+    font-style: italic;
+    color: #ac1818;
+  }
+  /* responsividade caixa login */
+  @media screen and (min-width: 1300px) and (max-width: 1370px) {
+    .banner-login {
+        margin: 200px 350px;
+   }
+  }
+  @media screen and (min-width: 1101px) and (max-width: 1299px) {
+    .banner-login {
+        margin: 200px 300px;
+   }
+  }
+  @media screen and (min-width: 960px) and (max-width: 1100px) {
+    .banner-login {
+        margin: 200px 200px;
+   }
+  }
+  @media screen and (min-width: 768px) and (max-width: 959px) {
+    .banner-login {
+        margin: 200px 100px;
+   }
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .banner-login {
+        margin: 0;
+        padding: 100px 0;
+   }
+  }

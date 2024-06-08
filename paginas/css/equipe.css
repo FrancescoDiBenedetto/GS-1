@@ -1,0 +1,71 @@
+/* equipe */
+.banner-integrantes {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0 0 100px 0;
+}
+.banner-integrantes h1 {
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+.cards-integrantes h2 {
+  text-align: center;
+  padding: 80px;
+}
+.equipe-farol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 400px;
+}
+.equipe-farol img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.equipe-farol h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 30px 20px 20px 20px;
+}
+.equipe-farol p {
+  text-align: left;
+  padding: 10px 30px;
+}
+.equipe-farol a {
+  margin: 30px 0 0 0;
+}
+.membro-1 {
+  background-color: #80c9ee;
+  margin: 15px 15px;
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+/* responsividade cards equipe*/
+@media screen and (min-width: 1300px) and (max-width: 1440px) {
+  .equipe-farol {
+    padding: 0 300px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  .equipe-farol {
+    padding: 0 150px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .equipe-farol {
+    display: list-item;
+    padding: 0 200px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .equipe-farol {
+    display: list-item;
+    padding: 0 150px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .equipe-farol {
+    display: list-item;
+    padding: 0;
+  }
+}

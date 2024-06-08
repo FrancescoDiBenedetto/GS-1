@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+    <script src="reveal.js" defer></script>
+    <script src="menu.js" defer></script>
+    <title>Chemist-GS</title>
+  </head>
+  <body>
+    <!--- header --->
+    <header class="header">
+      <div class="menu-caixa">
+        <!--- menu sanduiche --->
+        <div class="sanduiche" onclick="clickMenu()">
+          <!-- Se você precisar adicionar um ícone aqui, adicione o conteúdo SVG -->
+        </div>
+        <!--- menu perfil --->
+        <div class="perfil" onclick="clickPerfil()">
+          <!-- Se você precisar adicionar um ícone aqui, adicione o conteúdo SVG -->
+        </div>
+        <div class="menu-0">
+          <div class="logo-site">
+            <a href="./index.html"
+              ><img src="./img/chemist-icon.jpg" alt="Logo quimica" width="100"
+            /></a>
+          </div>
+          <nav class="menu-1" id="menu">
+            <div class="link-site">
+              <a href="./paginas/sobre.html" class="sobre">Sobre</a>
+            </div>
+            <div class="link-site">
+              <a href="./paginas/equipe.html" class="equipe">Equipe</a>
+            </div>
+          </nav>
+          <nav class="menu-2" id="perfil">
+            <div class="link-site">
+              <a href="./paginas/entrar.html" class="login">Entrar</a>
+            </div>
+            <div class="link-site">
+              <a href="./paginas/criar-conta.html" class="cadastro"
+                ><b>Criar Conta</b></a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--- banner --->
+    <main>
+      <section class="cta">
+        <div class="caixa-banner-index">
+          <div class="banner-index">
+            <h1>Testes, <br />consultas e monitoramento</h1>
+            <p>
+              Monitoramento contínuo e em tempo real da qualidade da água dos
+              oceanos, permitindo intervenções rápidas para mitigar a poluição.
+            </p>
+            <a href="./paginas/entrar.html" class="btn">Comece agora</a>
+          </div>
+        </div>
+      </section>
+      <!--- como funciona? --->
+      <section class="como-funciona">
+        <div class="banner-index-2 reveal">
+          <h2>Como funciona?</h2>
+          <ul class="passo-a-passo">
+            <li class="passo-1">
+              <h3>Passo 1</h3>
+              <p>Selecione o composto químico a ser controlado</p>
+            </li>
+            <li class="passo-1">
+              <h3>Passo 2</h3>
+              <p>Retire o kit de sensores em uma rede autorizada</p>
+            </li>
+            <li class="passo-1">
+              <h3>Passo 3</h3>
+              <p>Faça o monitoramento constante da qualidade da água</p>
+            </li>
+          </ul>
+          <h3 id="card-obs">
+            *Lembre-se de consultar os padrões de cada sensor
+          </h3>
+        </div>
+      </section>
+    </main>
+    <!--- footer --->
+    <footer class="footer">
+      <div class="challenge">
+        <p>FIAP - Global Solution 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>

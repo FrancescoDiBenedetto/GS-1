@@ -1,0 +1,114 @@
+/* sobre */
+/* caixa sobre */
+.banner-sobre {
+    background-color: #ffffff;
+    padding: 70px 0 0 0;
+  }
+  .resumo-sobre {
+    background-color: #80C9EE;
+    margin: 100px 0 0 300px;
+    padding: 100px 100px;
+    animation: fade-in 2s;
+  }
+  .resumo-sobre h1 {
+    padding: 0 50px 20px 50px;
+  }
+  .resumo-sobre p {
+    padding: 10px 50px;
+  }
+    /* responsividade caixa-sobre */
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .banner-sobre {
+        padding: 50px 0;
+      }
+      .resumo-sobre {
+        margin: 0;
+      }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .banner-sobre {
+        padding: 50px 0;
+      }
+      .resumo-sobre {
+        margin: 0;
+        padding: 100px 40px;
+      }
+      .resumo-sobre h1 {
+        padding: 0 50px 20px 0;
+      }
+      .resumo-sobre p {
+        padding: 10px 0;
+      }
+    }
+  /* passo a passo */
+  .instrucoes-detalhadas {
+    padding: 100px 0;
+  }
+  .lista-instrucoes li {
+    display: flex;
+  }
+  .titulo-passo {
+    flex: 1;
+    padding: 0 0 0 100px;
+  }
+  .titulo-passo h2 {
+    color: #006191;
+    text-transform: uppercase;
+  }
+  .titulo-passo h3 {
+    font-size: 30px;
+  }
+  .descricao-passo {
+    flex: 4;
+    margin: 0 50px;
+    padding: 0 100px 0 0;
+  }
+  .descricao-passo p {
+    padding: 10px 0;
+  }
+  .passo {
+    background-color: #CCE9F8;
+    margin-bottom: 70px;
+    padding: 70px;
+  }
+  .passo-2-3 {
+    background-color: #CCE9F8;
+    margin-bottom: 70px;
+    padding: 70px;
+  }
+  /* responsividade passo a passo*/
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .passo, .passo-2-3 {
+      padding: 30px;
+    }
+  }
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    .lista-instrucoes li {
+      display: list-item;
+    }
+    .titulo-passo {
+      padding: 0 0 0 50px;
+    }
+    .descricao-passo {
+      padding: 0;
+    }
+    .passo, .passo-2-3 {
+    padding: 30px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .lista-instrucoes li {
+    display: list-item;
+  }
+  .titulo-passo {
+    padding: 0 0 0 30px;
+  }
+  .descricao-passo {
+    padding: 0;
+    margin: 30px;
+  }
+  .passo, .passo-2-3 {
+  padding: 10px;
+  }
+}
+

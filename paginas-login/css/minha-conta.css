@@ -1,0 +1,10 @@
+.caixa-dados {
+    background-color: #fff;
+    padding: 150px 150px;
+}
+.dados-perfil {
+    animation: fade-in 3s;
+}
+.dados-perfil a {
+    margin: 300px 0 0 0;
+}

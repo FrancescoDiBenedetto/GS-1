@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilo.css" />
+    <link rel="stylesheet" href="./css/entrar.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png" />
+    <script src="../reveal.js" defer></script>
+    <script src="./js/entrar.js" defer></script>
+    <script src="../menu.js" defer></script>
+    <title>Entrar</title>
+  </head>
+  <body>
+    <!--- header -->
+    <header class="header">
+      <div class="menu-caixa">
+        <!--- menu sanduiche --->
+        <div class="sanduiche" onclick="clickMenu()">
+          <!-- Se você precisar adicionar um ícone aqui, adicione o conteúdo SVG -->
+        </div>
+        <!--- menu perfil --->
+        <div class="perfil" onclick="clickPerfil()">
+          <!-- Se você precisar adicionar um ícone aqui, adicione o conteúdo SVG -->
+        </div>
+        <div class="menu-0">
+          <div class="logo-site">
+            <a href="../index.html"
+              ><img src="../img/chemist-icon.jpg" alt="Logo quimica" width="50"
+            /></a>
+          </div>
+          <nav class="menu-1" id="menu">
+            <div class="link-site">
+              <a href="./sobre.html" class="sobre">Sobre</a>
+            </div>
+            <div class="link-site">
+              <a href="./equipe.html" class="equipe">Equipe</a>
+            </div>
+          </nav>
+          <nav class="menu-2" id="perfil">
+            <div class="link-site">
+              <a href="./entrar.html" class="login">Entrar</a>
+            </div>
+            <div class="link-site">
+              <a href="./criar-conta.html" class="cadastro"
+                ><b>Criar Conta</b></a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--- caixa de login --->
+    <main>
+      <section class="banner-login">
+        <div class="caixa-login">
+          <h1>Login</h1>
+          <p class="validacao"></p>
+          <!--- login "provisório" (não funcional) --->
+          <form
+            action="#"
+            method="get"
+            onsubmit="return validacao(idEmail,idSenha)"
+          >
+            <fieldset class="fieldset-caixa">
+              <div class="email-senha">
+                <input
+                  class="barra"
+                  type="email"
+                  name="txtEmail"
+                  id="idEmail"
+                  placeholder="Endereço de e-mail"
+                  minlength="10"
+                  maxlength="50"
+                  required
+                />
+              </div>
+              <div class="email-senha">
+                <input
+                  class="barra"
+                  type="password"
+                  name="txtSenha"
+                  id="idSenha"
+                  placeholder="Senha"
+                  minlength="8"
+                  maxlength="20"
+                  required
+                />
+              </div>
+              <p><a href="/" class="txt">Esqueceu a senha?</a></p>
+              <p>
+                Não possui conta?
+                <a href="/paginas/criar-conta.html" class="txt"
+                  ><b>Cadastre-se aqui</b></a
+                >
+              </p>
+              <div class="entrar">
+                <button class="btn" type="submit" id="btnSubmit">Entrar</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--- footer --->
+    <footer class="footer">
+      <div class="challenge">
+        <p>FIAP - Global Solution 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>

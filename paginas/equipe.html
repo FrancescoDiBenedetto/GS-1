@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilo.css" />
+    <link rel="stylesheet" href="./css/equipe.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png" />
+    <script src="../reveal.js" defer></script>
+    <script src="../menu.js" defer></script>
+    <title>Equipe</title>
+  </head>
+  <body>
+    <!--- header -->
+    <header class="header">
+      <div class="menu-caixa">
+        <!--- menu sanduiche --->
+        <div class="sanduiche" onclick="clickMenu()">
+          <!-- Se você precisar adicionar um ícone aqui, adicione o conteúdo SVG -->
+        </div>
+        <!--- menu perfil --->
+        <div class="perfil" onclick="clickPerfil()">
+          <!-- Se você precisar adicionar um ícone aqui, adicione o conteúdo SVG -->
+        </div>
+        <div class="menu-0">
+          <div class="logo-site">
+            <a href="../index.html"
+              ><img src="../img/chemist-icon.jpg" alt="Logo quimica" width="50"
+            /></a>
+          </div>
+          <nav class="menu-1" id="menu">
+            <div class="link-site">
+              <a href="./sobre.html" class="sobre">Sobre</a>
+            </div>
+            <div class="link-site">
+              <a href="./equipe.html" class="equipe">Equipe</a>
+            </div>
+          </nav>
+          <nav class="menu-2" id="perfil">
+            <div class="link-site">
+              <a href="./entrar.html" class="login">Entrar</a>
+            </div>
+            <div class="link-site">
+              <a href="./criar-conta.html" class="cadastro"
+                ><b>Criar Conta</b></a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--- integrantes --->
+      <section class="banner-integrantes">
+        <div class="cards-integrantes">
+          <h1>Integrantes</h1>
+          <ul class="equipe-farol">
+            <li class="membro-1">
+              <div class="card-foto">
+                <img
+                  src="./img/francesco.png"
+                  alt="Foto do integrante Francesco"
+                />
+              </div>
+              <h1>Francesco Di Benedetto</h1>
+              <p>RM: 557313</p>
+              <p>Turma: 1TDSPO</p>
+              <a
+                class="btn"
+                href="https://github.com/FrancescoDiBenedetto"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--- footer --->
+    <footer class="footer">
+      <div class="challenge">
+        <p>FIAP - Global Solution 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>

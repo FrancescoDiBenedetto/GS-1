@@ -1,0 +1,76 @@
+/* cadastro */
+h1 {
+  margin: 30px 0 15px;
+}
+.banner-cadastro {
+    background-color: #ffffff;
+    margin-left: 30%;
+    padding: 70px 100px;
+    animation: fade-in 2s;
+  }
+  .caixa-cadastro {
+    padding: 30px 100px;
+  }
+  .caixa-cadastro p {
+    padding: 5px 0;
+  }
+  .txt {
+    color: #006191;
+  }
+  .caixa-cadastro form {
+    margin: 20px 0;
+  }
+  .dados-cliente input[type="text"], .dados-cliente input[type="password"], .dados-cliente input[type="number"],
+  .dados-cliente input[type="email"],
+  .dados-veiculo input[type="text"], .dados-veiculo input[type="number"] {
+    background-color: #CCE9F8;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 0 0 20px;
+    margin: 10px 0;
+  }
+  .dados-cliente ::placeholder, .dados-veiculo ::placeholder {
+    color: #006191;
+  }
+  .criar-conta {
+    margin: 50px 0 0 0;
+    text-align: center;
+  }
+  .barra:focus {
+    outline: none;
+  }
+  .barra::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .fieldset-caixa {
+    border: 0;
+  }
+  /* responsividade cadastro */
+  @media screen and (min-width: 850px) and (max-width: 1023px) {
+    .banner-cadastro {
+      margin-left: 0;
+  }
+.caixa-cadastro {
+  padding: 30px 50px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 849px) {
+  .banner-cadastro {
+    margin-left: 0;
+}
+  .caixa-cadastro {
+    padding: 30px 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .banner-cadastro {
+    margin-left: 0;
+    padding: 70px 50px;
+}
+  .caixa-cadastro {
+    padding: 30px 0;
+  }
+}
